@@ -919,9 +919,8 @@ $(window).on('load', function() {
    */
   function addBaseMap() {
     var basemap = trySetting('_tileProvider', 'CartoDB.Positron');
-    L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
-      maxZoom: 18,
-      attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
+    L.tileLayer.provider(basemap, {
+    maxZoom: 18,
     }).addTo(map);
     L.control.attribution({
       position: trySetting('_mapAttribution', 'bottomright')
