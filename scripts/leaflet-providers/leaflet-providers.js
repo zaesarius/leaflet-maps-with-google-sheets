@@ -100,11 +100,11 @@
 
 	L.TileLayer.Provider.providers = {
 		OpenStreetMap: {
-			url: '//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+			url: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
 			options: {
 				maxZoom: 19,
 				attribution:
-					'&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+					'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
 			},
 			variants: {
 				Mapnik: {},
