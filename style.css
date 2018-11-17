@@ -17,7 +17,9 @@ body {
 .marker-cluster-medium {
     background-color: rgba(87, 174, 241, 0.6) !important;
 }
-
+.leaflet-control-layers-overlays label:nth-child(7) {
+      display: none;
+}
 #map {
   width: 100vw;
   height: 100vh;
