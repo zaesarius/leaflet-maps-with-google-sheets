@@ -17,6 +17,12 @@ body {
 .marker-cluster-medium {
     background-color: rgba(87, 174, 241, 0.6) !important;
 }
+.marker-cluster-large {
+    background-color: rgb(247, 129, 131) !important;
+}
+.marker-cluster-large div {
+    background-color: rgb(218, 92, 94) !important;
+}
 .leaflet-control-layers-overlays label:nth-child(7) {
       display: none;
 }
